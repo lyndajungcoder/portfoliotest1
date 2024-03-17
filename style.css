@@ -1,0 +1,59 @@
+
+:root{
+--red: #F24150;
+--pinky: #F26DB6;
+--blue: #1C58A6;
+--mint: #04BF68;
+--orange: #F29F05;
+--offwhite: #FFFDF5;
+--black: #000000;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: navigo, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+}
+
+body{
+    background-image: url("/images/AdobeStock_388658955.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+   
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a{
+    color: var(offwhite);
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55 ease;
+
+}
