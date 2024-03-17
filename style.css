@@ -13,10 +13,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: navigo, sans-serif;
+    font-family: "bilo", sans-serif;
     list-style: none;
     text-decoration: none;
 }
+
+
 header{
     position: fixed;
     right: 0;
@@ -33,14 +35,18 @@ header{
 .logo{
     height: 50px;
     width: 50px;
+
+
+}
+
+.logo:hover {
+    opacity: 50%;
+    transition: 0.7s;
+    transform: rotate(35deg);
 }
 
 body{
-    background-image: url("/images/AdobeStock_388658955.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+    background: var(--offwhite);
    
 }
 
@@ -49,11 +55,102 @@ body{
 }
 
 .navlist a{
-    color: var(offwhite);
+    color: var(--blue);
     margin-left: 60px;
     font-size: 15px;
     font-weight: 600;
     border-bottom: 2px solid transparent;
-    transition: all .55 ease;
+    transition: all .55s ease;
+}
 
+.navlist a:hover{
+    border-bottom: 2px solid var(--blue);
+}
+
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+section{
+   padding: 0 19%; 
+}
+
+.hero-text h5{
+    font-size: 40px;
+    font-weight: 800;
+    font-style: italic;
+    color: var(--mint);
+    margin-bottom: 40px;
+}
+
+.hero-text h1{
+    font-family: "bilo", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 150px;
+    line-height: 1;
+    color: var(--black);
+    margin: 0 0 45px;
+}
+
+.hero-text p{
+    font-size: 20px;
+    font-weight: 800;
+    font-style: normal;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.hero-img img{
+    width: 550px;
+    height: auto;
+}
+
+.hero-text a{
+    display: inline-block;
+    color: var(--offwhite);
+    background: var(--pinky);
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 800;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+    margin-top: 10px;
+}
+
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid var(--pinky);
+    transform: translateX(8px);
+    color: var(--blue);
+}
+
+.hero-text a.ctaa{
+    background: transparent;
+    border: 1px solid var(--pinky);
+    margin-left: 20px;
+    color: var(--blue);
+}
+
+.hero-text a.ctaa i{
+    vertical-align: middle;
+    margin-right: 5px;
 }
