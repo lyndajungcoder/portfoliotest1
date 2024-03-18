@@ -1,14 +1,13 @@
 
 :root{
---red: #F24150;
---pinky: #F26DB6;
---pinkdust: #c69e91;
---blue: #1C58A6;
---mint: #04BF68;
---orange: #F29F05;
---offwhite: ##ece7e1;
---black: #000000;
-
+    --red: #F24150;
+    --pinky: #F26DB6;
+    --pinkdust: #c69e91;
+    --blue: #1C58A6;
+    --mint: #04BF68;
+    --orange: #F29F05;
+    --offwhite: #ece7e1;
+    --black: #000000;
 }
 
 *{
@@ -50,6 +49,9 @@ body{
    
 }
 
+nav{
+    background-color: var(--offwhite);
+}
 
 .navlist{
     display: flex;
@@ -95,7 +97,7 @@ section{
     font-size: 40px;
     font-weight: 800;
     font-style: italic;
-    color: var(--mint);
+    color: var(--blue);
     margin-bottom: 40px;
 }
 
@@ -120,6 +122,7 @@ section{
 .hero-img img{
     width: 550px;
     height: auto;
+    border-radius: 30px;
 }
 
 .hero-text a{
