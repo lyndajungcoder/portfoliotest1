@@ -141,12 +141,12 @@ section{
 .propertyme{
     height: 100%;
     width: 100%;
-    min-height: 50vh;
+    min-height: 20vh;
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .icons{

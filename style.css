@@ -6,7 +6,7 @@
 --blue: #1C58A6;
 --mint: #04BF68;
 --orange: #F29F05;
---offwhite: ##ece7e1;
+--offwhite: #ece7e1;
 --black: #000000;
 
 }
@@ -245,7 +245,8 @@ section{
         right: -100%;
         width: 300px;
         height: 35vh;
-        background: var(--orange);
+        background: var(--pinkdust);
+        border-radius: 20px;
         display: flex;
         align-items: center;
         flex-direction: column;
