@@ -20,7 +20,7 @@
 }
 
 
-header{
+nav{
     position: fixed;
     right: 0;
     top: 0;
@@ -30,7 +30,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 33px 9%;
-    background: transparent;
+    background-color: var(--offwhite);
 }
 
 .logo{
@@ -49,9 +49,6 @@ body{
    
 }
 
-nav{
-    background-color: var(--offwhite);
-}
 
 .navlist{
     display: flex;
@@ -125,38 +122,31 @@ section{
     border-radius: 30px;
 }
 
-.hero-text a{
-    display: inline-block;
-    color: var(--offwhite);
-    background: var(--pinky);
-    border: 1px solid transparent;
-    padding: 12px 30px;
-    line-height: 1.4;
-    font-size: 14px;
+.propertyme-text h5{
+    font-size: 40px;
     font-weight: 800;
-    border-radius: 30px;
-    text-transform: uppercase;
-    transition: all .55s ease;
-    margin-top: 10px;
-}
-
-.hero-text a:hover{
-    background: transparent;
-    border: 1px solid var(--pinky);
-    transform: translateX(8px);
+    font-style: italic;
     color: var(--blue);
+    margin-bottom: 40px;
 }
 
-.hero-text a.ctaa{
-    background: transparent;
-    border: 1px solid var(--pinky);
-    margin-left: 20px;
-    color: var(--blue);
+.propertyme-text p{
+    font-size: 20px;
+    font-weight: 800;
+    font-style: normal;
+    color: var(--black);
+    margin-bottom: 10px;
 }
 
-.hero-text a.ctaa i{
-    vertical-align: middle;
-    margin-left: 5px;
+.propertyme{
+    height: 100%;
+    width: 100%;
+    min-height: 50vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
 }
 
 .icons{
@@ -182,7 +172,7 @@ section{
 /* media queries for responsive design */
 
 @media (max-width: 1535px){
-    header{
+    nav{
         padding: 15px 3%;
         transition: .2s;
     }
