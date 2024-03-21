@@ -19,7 +19,6 @@
     text-decoration: none;
 }
 
-
 nav{
     position: fixed;
     right: 0;
@@ -48,7 +47,6 @@ body{
     background: var(--offwhite);
    
 }
-
 
 .navlist{
     display: flex;
@@ -100,7 +98,7 @@ section{
 
 .hero-text h1{
     font-family: "bilo", sans-serif;
-    font-weight: 800;
+    font-weight: 600;
     font-style: normal;
     font-size: 150px;
     line-height: 1;
@@ -141,13 +139,41 @@ section{
 .propertyme{
     height: 100%;
     width: 100%;
-    min-height: 20vh;
+    min-height: 100vh;
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
 }
+
+.hobby-text h5{
+    font-size: 40px;
+    font-weight: 800;
+    font-style: italic;
+    color: var(--blue);
+    margin-bottom: 40px;
+}
+
+.hobby-text p{
+    font-size: 20px;
+    font-weight: 800;
+    font-style: normal;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.hobbies{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
 
 .icons{
     position: absolute;
@@ -169,6 +195,8 @@ section{
     transform: translateY(-5px);
 }
 
+
+
 /* media queries for responsive design */
 
 @media (max-width: 1535px){
@@ -180,6 +208,10 @@ section{
         padding: 0 3%;
         transition: .2s;
     }
+    .scroll-down{
+		right: 3%;
+		transition: .2s;
+	}
 }
 
 @media (max-width: 1460px){
@@ -225,7 +257,9 @@ section{
 	.icons{
 		display: none;
 	}
-	
+	.scroll-down{
+		display: none;
+	}
 }
 
 @media (max-width: 990px){

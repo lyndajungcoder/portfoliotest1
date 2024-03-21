@@ -7,7 +7,7 @@ menu.onclick = () => {
 };
 
 const sr = ScrollReveal ({
-	distance: '65px',
+	distance: '10px',
 	duration: 2600,
 	delay: 450,
 	reset: true
@@ -16,4 +16,6 @@ const sr = ScrollReveal ({
 sr.reveal('.hero-text',{delay:200, origin:'top'});
 sr.reveal('.hero-img',{delay:450, origin:'top'});
 sr.reveal('.icons',{delay:500, origin:'left'});
+sr.reveal('.scroll-down',{delay:500, origin:'right'});
 sr.reveal('.propertyme-text',{delay:200, origin:'top'});
+sr.reveal('.hobby-text',{delay:200, origin:'top'});
