@@ -4,9 +4,9 @@
     --pinky: #F26DB6;
     --pinkdust: #c69e91;
     --blue: #1C58A6;
-    --mint: #04BF68;
+    --mint: #00c66a;
     --orange: #F29F05;
-    --offwhite: #ece7e1;
+    --offwhite: #F2F2F2;
     --black: #000000;
 }
 
@@ -94,7 +94,7 @@ body {
 }
 
 /* styling of the body */
-section {
+section  {
     margin: 100px 0 250px 0;
     padding: 0 19%;
     display: flex;
@@ -116,14 +116,137 @@ section {
     margin-bottom: 60px;
 }
 
+.image > img {
+    height: 70dvh;
+    border-radius: 1em;
+    max-width: 100dvw;
+ }
+
+.skill-container {
+    height: 20vh;
+    width: 50rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sample-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5em;
+
+}
+
 .sample-cards .card {
     background: var(--mint);
-    height: 100px;
-    width: 165px;
+    height: 100%;
+    width: 25vw;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     font-size: 1.1em;
     font-weight: 300;
+}
+
+.educationlist{
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.educationlist p4 {
+    display: block;
+}
+
+.skilllists > h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-btn a {
+    display: inline-block;
+    color: var(--offwhite);
+    background: var(--pinky);
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 800;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+    margin-top: -10px;
+    
+}
+
+.resume-btn a:hover{
+    background: transparent;
+    border: 1px solid var(--pinky);
+    transform: translateX(8px);
+    color: var(--blue);
+}
+
+
+/* Desktop view */
+@media (max-width: 1535px){
+    nav{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .icons{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    
+}
+
+@media (max-width: 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 35vh;
+        background: var(--orange);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 20px;
+        transition: all .65s ease;
+    }
+    .navlist a{
+        display: block;
+        margin: 10px 0;
+        margin-left: 0;
+    }
+    .navlist.open{
+        right: 0;
+        
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .home {
+        flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+    }
 }

@@ -13,9 +13,9 @@ const sr = ScrollReveal ({
 	reset: true
 });
 
-sr.reveal('.hero-text',{delay:200, origin:'top'});
-sr.reveal('.hero-img',{delay:450, origin:'top'});
 sr.reveal('.icons',{delay:500, origin:'left'});
-sr.reveal('.scroll',{delay:500, origin:'left'});
-sr.reveal('.propertyme-text',{delay:200, origin:'top'});
-sr.reveal('.hobby-text',{delay:200, origin:'top'});
+
+ScrollReveal().reveal(".sample-cards", {
+	duration: 5000,
+	move: 0
+  });
